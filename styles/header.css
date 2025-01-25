@@ -1,0 +1,185 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E9B915;
+    margin: 50px;
+    padding: 10px 90px 10px 90px;
+    border-radius: 80px;
+}
+
+.header-links {
+    display: block;
+}
+
+.header a {
+    text-transform: uppercase;
+    color: black;
+}
+
+.header-logo {
+    width: 170px;
+}
+
+.header-links {
+    display: flex;
+    gap: 100px;
+}
+
+.header-links a {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.header-basket-button {
+    display: block;
+}
+
+.burger-basket {
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+
+}
+
+.header-basket {
+    width: 30px;
+}
+
+
+.header-links-burger {
+    display: none;
+}
+
+
+/* menu-burger */
+
+.burger-wrapper.active {
+    background-color: black;
+    opacity: 0.95;
+}
+
+.bar {
+    z-index: 3;
+}
+
+.burger-4 input[type = "checkbox"] {
+    display: none;
+    visibility: hidden;
+  }
+  
+  .burger-4 .bar {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .burger-4 .bar span {
+    position: absolute;
+    width: 40px;
+    height: 4.7px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+  }
+  
+  .burger-4 .bar span.top {
+    top: 4px;
+  }
+  
+  .burger-4 .bar span.middle {
+    top: 16px;
+  }
+  
+  .burger-4 .bar span.bottom {
+    bottom: 8px;
+  }
+  
+  .burger-4 input[type]:checked ~ span.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
+  }
+  
+  .burger-4 input[type]:checked ~ span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 48px;
+    bottom: -1px;
+  }
+  
+  .burger-4 input[type]:checked ~ span.middle {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  .burger-menu {
+    display: none; 
+    transition: all 0.8s;
+    opacity: 0; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+    padding-left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+
+
+.burger-menu li {
+  text-align: center;
+}
+
+
+.burger-menu.open {
+    display: block; 
+    transition: all 0.3s;
+    transform: translateX(0);
+    opacity: 0.9; 
+   
+}
+
+.burger-menu li {
+    color: white;
+
+}
+
+
+
+
+@media screen and (max-width: 1124px) {
+    .header-links {
+        display: none;
+    }
+
+    .header-basket-button {
+        display: none;
+    }
+
+    .header-links-burger {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 10px 30px 10px 30px;
+  }
+
+  .header-logo {
+    width: 130px;
+  }
+} 

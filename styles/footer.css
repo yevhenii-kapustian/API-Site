@@ -1,0 +1,163 @@
+.footer {
+    margin-top: 6rem;
+    background-color: #E9B915;
+    padding: 5rem 2rem;
+}
+
+
+.footer-columns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-item1 {
+    gap: 10px;
+    width: 35%;
+}
+
+.footer-item1 h3 {
+    font-size: 36px;
+    font-weight: 550;
+    color: rgba(51, 51, 51, 1);
+}
+
+.footer__form input {
+    width: 25rem;
+    border: none;
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
+    opacity: 0.3;
+    background: none;
+}
+
+.footer__form-button {
+    display: inline;
+}
+
+.footer__form button {
+    border: none;
+}
+
+.footer__form-button img {
+    mix-blend-mode: multiply;
+}
+
+.footer__form label {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.footer__form label::before {
+    font-size: 2.5rem;
+    content: "•";
+    display: inline-block;
+    margin-right: .625rem;
+    width: .7rem;
+}
+
+.footer__social-media {
+    margin-top: 40px;
+}
+
+.footer__social-media p {
+    display: flex;
+    justify-content: end;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+
+.footer__social-media-links {
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.footer__social__media-item {
+    background-color: rgb(243, 243, 243);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.footer__social__media-item:hover {
+    transform: translateY(2px); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.footer__social-media-links a {
+    border-radius: 25px;
+}
+
+
+.footer__social-media-links img {
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 920px) {
+    .footer-columns {
+        display: block;
+    }
+
+    .footer-item1 {
+        width: 100%;
+    }
+
+    .footer-item1 h3 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+
+    .footer__form-button input{
+        width: 90%;
+    }
+
+    .footer-item2 {
+        margin-top: 0.5rem;
+    }
+
+    .footer__social-media p {
+        display: inline;
+    }
+    
+    
+    .footer__social-media-links {
+        display: flex;
+        justify-content: start;
+    }
+
+    .footer__social-media {
+        margin-top: 20px;
+    }
+
+    .footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 443px) {
+    .footer__form-button input{
+        width: 85%;
+    }
+
+    .footer__form label {
+        font-size: 16px;
+    }
+}
