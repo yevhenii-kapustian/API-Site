@@ -65,6 +65,7 @@ button, input[type="submit"] {
     background: none;
     cursor: pointer;
     border: none;
+    color: black;
 }
 
 address {
